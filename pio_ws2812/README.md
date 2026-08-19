@@ -8,5 +8,6 @@
 - ws2812_sample.c 紅綠藍三色 LED 輪閃範例  
 - ws2812_pb.c 按鍵切換紅綠藍三色 LED 範例
 
+CMakeLists.txt 已加入 ws2812_sample 及 ws2812_pb 相關編譯設定。  
 ws2812_sample.c 及 ws2812_pb.c 編譯完成後會產生對應 uf2 執行檔。  
 按下板上 Boot 不放，再按下 Reset，放開 Reset後會自動開啟虛擬磁碟機，將 *.uf2 拖進後會自動重啟開發板。  
