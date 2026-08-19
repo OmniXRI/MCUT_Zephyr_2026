@@ -132,17 +132,18 @@ int main() {
         // puts(pattern_table[pat].name);
         // puts(dir == 1 ? "(forward)" : "(backward)");
         // for (int i = 0; i < 1000; ++i) {
-        //     pattern_table[pat].pat(pio, sm, NUM_PIXELS, t);
+        //     pattern_table[3].pat(pio, sm, NUM_PIXELS, t);
+        //     //pattern_table[pat].pat(pio, sm, NUM_PIXELS, t);
         //     sleep_ms(10);
         //     t += dir;
         // }
 
         put_pixel(pio, sm, urgb_u32(0xff, 0, 0));
-        sleep_ms(500);
+        sleep_ms(1000);
         put_pixel(pio, sm, urgb_u32(0, 0xff, 0));
-        sleep_ms(500);
+        sleep_ms(1000);
         put_pixel(pio, sm, urgb_u32(0, 0, 0xff));
-        sleep_ms(500);
+        sleep_ms(1000);
     }
 
     // This will free resources and unload our program

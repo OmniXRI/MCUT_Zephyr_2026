@@ -47,6 +47,42 @@ target_sources(pio_ws2812 PRIVATE ws2812.c)
 target_link_libraries(pio_ws2812 PRIVATE pico_stdlib hardware_pio)
 pico_add_extra_outputs(pio_ws2812)
 
+# ======================================================
+# 新增單獨的 ws2812_simple 執行檔
+# ======================================================
+add_executable(pio_ws2812_simple)
+
+# 讓 ws2812_simple 也能使用 ws2812.pio 生成的標頭檔
+pico_generate_pio_header(pio_ws2812_simple ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio OUTPUT_DIR ${CMAKE_CURRENT_LIST_DIR}/generated)
+
+# 指定對應的 C 檔案
+target_sources(pio_ws2812_simple PRIVATE ws2812_simple.c)
+
+# 連結 Pico SDK 函式庫
+target_link_libraries(pio_ws2812_simple PRIVATE pico_stdlib hardware_pio)
+
+# 產生 .uf2, .elf 等輸出檔
+pico_add_extra_outputs(pio_ws2812_simple)
+
+# ======================================================
+# 新增單獨的 ws2812_pb 執行檔
+# ======================================================
+add_executable(pio_ws2812_pb)
+
+# 讓 ws2812_pb 也能使用 ws2812.pio 生成的標頭檔
+pico_generate_pio_header(pio_ws2812_pb ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio OUTPUT_DIR ${CMAKE_CURRENT_LIST_DIR}/generated)
+
+# 指定對應的 C 檔案
+target_sources(pio_ws2812_pb PRIVATE ws2812_pb.c)
+
+# 連結 Pico SDK 函式庫
+target_link_libraries(pio_ws2812_pb PRIVATE pico_stdlib hardware_pio)
+
+# 產生 .uf2, .elf 等輸出檔
+pico_add_extra_outputs(pio_ws2812_pb)
+
+# ======================================================
+
 # add url via pico_set_program_url
 
 add_executable(pio_ws2812_parallel)
