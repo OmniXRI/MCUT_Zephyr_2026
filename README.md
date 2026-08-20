@@ -4,7 +4,10 @@
 
 
 ## 使用硬體：**YD-RP2040**(相容 Raspberry Pi Pico)  
-![YD-RP2040](https://raw.githubusercontent.com/OmniXRI/MCUT_Zephyr_2026/refs/heads/main/YD-RP2040/20260806_MCUT_Zephyr_008.JPG)
+![YD-RP2040](https://raw.githubusercontent.com/OmniXRI/MCUT_Zephyr_2026/refs/heads/main/YD-RP2040/20260806_MCUT_Zephyr_008.JPG)  
+
+## 實驗電路：  
+![YD-RP2040_Projects](https://raw.githubusercontent.com/OmniXRI/MCUT_Zephyr_2026/refs/heads/main/YD-RP2040_Projects.jpg)  
 
 ## 參考文獻：  
 
